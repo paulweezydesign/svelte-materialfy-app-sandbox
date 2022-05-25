@@ -1,0 +1,35 @@
+{
+  "name": "svelte",
+  "version": "1.0.0",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.10.1",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-svelte": "^6.1.1",
+    "rollup-plugin-terser": "^4.0.4",
+    "sirv-cli": "^0.3.1"
+  },
+  "dependencies": {
+    "@mdi/js": "5.9.55",
+    "@smui/banner": "4.2.0",
+    "@smui/top-app-bar": "4.2.0",
+    "sass": "1.32.13",
+    "svelte": "^3.32.3",
+    "svelte-materialify": "0.3.10",
+    "svelte-postcss": "1.0.7",
+    "svelte-preprocess": "4.7.3"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "autobuild": "rollup -c -w",
+    "dev": "run-p start:dev autobuild",
+    "start": "sirv public",
+    "start:dev": "sirv public --dev"
+  },
+  "keywords": [
+    "svelte",
+    "starter"
+  ],
+  "description": "Svelte example starter project"
+}
